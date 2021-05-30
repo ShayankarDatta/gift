@@ -6,11 +6,14 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 	<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
 	<link href='https://fonts.googleapis.com/css?family=Source Code Pro' rel='stylesheet'>
-
+	<link href='https://fonts.googleapis.com/css?family=Yrsa' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Zilla Slab' rel='stylesheet'>
 	<link rel="stylesheet" type="text/css" href="gift.css">
+	<script src="gift.js"></script>
 	<style>
 		body{
 			background-image: url(bi7.jpg);
+			/*background-color: black;*/
 			background-position: center;
 			background-size: cover;
 			height: 100%;	
@@ -25,9 +28,19 @@
 	<div class="container">
 		<div style=" padding: 40px">
 		<h1 style="padding-top: 100px; padding-left: 70px; color: #FFFFFFFF; font-family:'Oldenburg'; text-shadow: 2px 2px #ff0000; font-size: 70px">Welcome to my website!!! &#128515;</h1>
-		<h4 style="padding-top: 100px; padding-left: 70px; color: black; font-family:'Source Code Pro'; text-shadow: 2px 2px #0000FF; font-size: 50px">Here my chatbot "Magojastro" is for you who can predict about a person just by seeing his/her name</h4>
+		<h4 style="padding-top: 50px; padding-left: 70px; color: #ff0000; font-family:'Source Code Pro'; text-shadow: 2px 2px #0000FF; font-size: 50px">Here my chatbot "Magojastro" is for you who can predict about a person just by seeing his/her name</h4>
 		<hr class="my-4">
-		<h3>So to enjoy this feature please <button type="button" class="btn btn-success btn-lg">Click here</button></h3>
+		<h3 style="padding-top: 10px; padding-left: 70px; color: #fbefcc; font-family:'Zilla Slab'; text-shadow: 2px 2px #0000FF; font-size: 50px">So to enjoy this feature please &#128073;&#127995;<button type="button" class="btn btn-danger btn-lg" onclick="changeDiv()";>Click here</button></h3>
+
+
+		<div id="hide" onclick="changeDiv()";>
+			<h2 style="padding-top: 40px; padding-left: 70px; color: #feb236; font-family:'Yrsa'; text-shadow: 2px 2px white; font-size: 50px">&#x1F615;<br>Oh no!! Seems like it was not the correct button...please <button type="button" class="btn btn-default btn-lg" onclick="changeDiv1()";>Click here</button> again&#x1F643;</h2>
+
+			<div id="hide1" onclick="changeDiv1()";>
+			<h2 style="padding-top: 40px; padding-left: 70px; color: #feb236; font-family:'Yrsa'; text-shadow: 2px 2px white; font-size: 50px">&#x1F635;<br>&#x1F910;<br>Cool down...this is last time...I am sure it will work this time...please <button type="button" class="btn btn-success btn-lg"> <a href="index1.html">Press </button></a> it</h2>
+
+		</div>
+		
 	</div>
 	</div>
 </body>
