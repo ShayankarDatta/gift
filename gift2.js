@@ -32,7 +32,7 @@ function alertFunc() {
   document.getElementById("h2").innerHTML="Thanks for choosing<br>Now I am connecting my self with your mind... &#129488;";
 }
 function alertFunc2() {
-  document.getElementById("d1").innerHTML="You are little gumphy &#129301; but very sweet &#129321;";
+  document.getElementById("d1").innerHTML="You are little grumpy &#129301; but very sweet &#129321;";
 }
 function alertFunc3() {
   document.getElementById("d2").innerHTML="Little lazy &#129317; but fresh from mind &#129322;";
