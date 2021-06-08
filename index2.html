@@ -47,7 +47,7 @@
 <body>
 	<div class= "container">
 	<div class="x">
-	<h4 style="font-family: Sofia, sans-serif; font-size: 55px; text-shadow: 3px 3px 3px #ababab; "><img src="maku1.JPG" style="width:230px; height:230px; border-radius: 50%">                    হনোলুলুর মাকুদা</h4>
+	<h4 style="font-family: Sofia, sans-serif; font-size: 55px; text-shadow: 3px 3px 3px #ababab; "><img src="maku1.jpg" style="width:230px; height:230px; border-radius: 50%">                    হনোলুলুর মাকুদা</h4>
 	<p></p>
 	</div>
 	<div class="d">
@@ -95,7 +95,7 @@
 </div>
 
 			
-					<div class="d" style="padding-left: 30px ; padding-top: 10px;background-color: #00ffff; width: 620px;  height: 50px; font-family: Georgia, serif; font-size: 30px">
+					<div class="d" style="padding-left: 30px ; padding-top: 10px;background-color: #00ffff; width: 650px;  height: 50px; font-family: Georgia, serif; font-size: 30px">
    				 <p id="d1"> </p>
    				 </div>
    				 <p></p>
@@ -107,7 +107,7 @@
    				 <p id="d3"></p>
    				 </div>
    				 <p></p>
-   				 <div class="d" style="padding-left: 70px ; padding-top: 10px;background-color: #00ffff; width: 560px;  height: 150px; font-family: Georgia, serif; font-size: 30px">
+   				 <div class="d" style="padding-left: 70px ; padding-top: 10px;background-color: #00ffff; width: 560px;  height: 180px; font-family: Georgia, serif; font-size: 30px">
    				 <p id="d4"></p><input type="text" name="t" id="inp" placeholder="Enter the digit only..."><button onclick="datee()">Enter</button>
 
    				 </div>
@@ -128,7 +128,7 @@
    				 </div>
    				 <p></p>
    				 <p></p>
-   				  <div class="d" style="padding-left: 30px ; padding-top: 10px;background-color: #00ffff; width: 560px;  height: 100px; font-family: Georgia, serif; font-size: 30px">
+   				  <div class="d" style="padding-left: 30px ; padding-top: 10px;background-color: #00ffff; width: 590px;  height: 100px; font-family: Georgia, serif; font-size: 30px">
    				 <p id="d5"></p>
    				 </div>
    				 <p></p>
@@ -152,6 +152,39 @@
 	<div class="jumbotron">
 		
 				<input type="text" placeholder="Type here something..." name="enter" id="signin"><span class="glyphicon glyphicon-volume-up"></span><button type="button" class="btn btn-success btn-lg" onclick="fun()">Send</button>
+				<!-- <script>
+			/* JS comes here */
+		    function runSpeechRecognition() {
+		        // get output div reference
+		        var output = document.getElementById("output");
+		        // get action element reference
+		        var action = document.getElementById("action");
+                // new speech recognition object
+                var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
+                var recognition = new SpeechRecognition();
+            
+                // This runs when the speech recognition service starts
+                recognition.onstart = function() {
+                    action.innerHTML = "<small>listening, please speak...</small>";
+                };
+                
+                recognition.onspeechend = function() {
+                    action.innerHTML = "<small>stopped listening, hope you are done...</small>";
+                    recognition.stop();
+                }
+              
+                // This runs when the speech recognition service returns result
+                recognition.onresult = function(event) {
+                    var transcript = event.results[0][0].transcript;
+                    var confidence = event.results[0][0].confidence;
+                    output.innerHTML = "<b>Text:</b> " + transcript + "<br/> <b>Confidence:</b> " + confidence*100+"%";
+                    output.classList.remove("hide");
+                };
+              
+                 // start recognition
+                 recognition.start();
+	        }
+		</script> -->
 
 
 	</div>
